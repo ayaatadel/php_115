@@ -1,0 +1,25 @@
+ERD => Entity relationship Diagram
+Entity => course , teacher , student => attributes
+
+employee (strong entity)  => dependants  (week entity)
+
+arrributes 
+key attribute => primary key 
+multivalued attribute => has more than value => phone , address
+composite attribute => divided to small parts (name=> first name,lastname)
+derived attribute=> attributed calculated from another attribute=> age , birthdate => 15/1/2000
+ simple attribute => gender
+
+
+Realtionship => degree , cardinality ratio
+
+degree => binary => two entities 
+    => unary relation => entity and it self
+    => ternary relation => between more than two entities
+
+emplyee        supervisor (employee)
+
+cardinality ration => one to one 
+                      one to many
+                      many to many
+
