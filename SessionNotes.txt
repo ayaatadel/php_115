@@ -19,7 +19,30 @@ degree => binary => two entities
 
 emplyee        supervisor (employee)
 
-cardinality ration => one to one 
-                      one to many
-                      many to many
+cardinality ration => 
+one to one => only one of entity deal with only one
+one to many=> only one of entity deal with many
+many to many=> many of entity deal with many
+
+
+
+
+
+---------------------- mapping ERD
+multi valued attribute => new table
+
+ one to many => primary key of one => put as => foreign key in many
+
+one to one => primary key of must => put as => foreign key in  may
+many to many => new table => has primary key of each entity as a foreign key
+
+
+CREATE table department(id integer PRIMARY key AUTO_INCREMENT ,name varchar (255) UNIQUE );
+
+CREATE table project(id integer PRIMARY key AUTO_INCREMENT ,name varchar (255) UNIQUE, department_id);
+
+alter table project add CONSTRAINT kf_dp_id FOREIGN KEY (department_id) REFERENCES department (id);
+
+
+
 
